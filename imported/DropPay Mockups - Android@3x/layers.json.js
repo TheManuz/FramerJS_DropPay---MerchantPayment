@@ -711,48 +711,15 @@ window.__imported__["DropPay Mockups - Android@3x/layers.json.js"] = [
 		"backgroundColor": "rgba(23.969999999999995, 167.79, 239.70000000000002, 1)",
 		"children": [
 			{
-				"objectId": "BEF24850-2B9C-42CB-B565-780AC2149A97",
-				"kind": "text",
-				"name": "vendita3_label_success",
-				"maskFrame": null,
-				"layerFrame": {
-					"x": 82,
-					"y": 498,
-					"width": 196,
-					"height": 21
-				},
-				"visible": true,
-				"metadata": {
-					"opacity": 1,
-					"string": "Pagamento effettuato",
-					"css": [
-						"/* Pagamento effettuato: */",
-						"font-family: Roboto-Medium;",
-						"font-size: 20px;",
-						"color: #FFFFFF;"
-					]
-				},
-				"image": {
-					"path": "images/Layer-vendita3_label_success-qkvgmjq4.png",
-					"frame": {
-						"x": 82,
-						"y": 498,
-						"width": 196,
-						"height": 21
-					}
-				},
-				"children": []
-			},
-			{
 				"objectId": "2E65156A-14DB-4401-8989-117334987AB0",
 				"kind": "text",
 				"name": "vendita3_label_info",
 				"maskFrame": null,
 				"layerFrame": {
-					"x": 67,
-					"y": 497,
-					"width": 226,
-					"height": 14
+					"x": 17,
+					"y": 556,
+					"width": 326,
+					"height": 20
 				},
 				"visible": true,
 				"metadata": {
@@ -760,53 +727,18 @@ window.__imported__["DropPay Mockups - Android@3x/layers.json.js"] = [
 					"string": "Fai inquadrare il codice al tuo cliente ",
 					"css": [
 						"/* Fai inquadrare il co: */",
-						"font-family: Roboto-Regular;",
-						"font-size: 14px;",
-						"color: rgba(255,255,255,0.87);",
-						"line-height: 16px;"
+						"font-family: Roboto-Medium;",
+						"font-size: 20px;",
+						"color: #FFFFFF;"
 					]
 				},
 				"image": {
 					"path": "images/Layer-vendita3_label_info-mku2nte1.png",
 					"frame": {
-						"x": 67,
-						"y": 497,
-						"width": 226,
-						"height": 14
-					}
-				},
-				"children": []
-			},
-			{
-				"objectId": "396B696D-748D-4CB5-A0C2-DA358F6CF1CE",
-				"kind": "text",
-				"name": "vendita3_label_id",
-				"maskFrame": null,
-				"layerFrame": {
-					"x": 87,
-					"y": 115,
-					"width": 186,
-					"height": 12
-				},
-				"visible": true,
-				"metadata": {
-					"opacity": 1,
-					"string": "ID ordine: #K155P4CKY0U533",
-					"css": [
-						"/* ID ordine: #K155P4CK: */",
-						"font-family: Roboto-Regular;",
-						"font-size: 14px;",
-						"color: rgba(255,255,255,0.87);",
-						"line-height: 16px;"
-					]
-				},
-				"image": {
-					"path": "images/Layer-vendita3_label_id-mzk2qjy5.png",
-					"frame": {
-						"x": 87,
-						"y": 115,
-						"width": 186,
-						"height": 12
+						"x": 17,
+						"y": 556,
+						"width": 326,
+						"height": 20
 					}
 				},
 				"children": []
@@ -817,10 +749,10 @@ window.__imported__["DropPay Mockups - Android@3x/layers.json.js"] = [
 				"name": "vendita3_check",
 				"maskFrame": null,
 				"layerFrame": {
-					"x": 38,
-					"y": 178,
-					"width": 285,
-					"height": 287
+					"x": 51,
+					"y": 215,
+					"width": 264,
+					"height": 202
 				},
 				"visible": true,
 				"metadata": {
@@ -829,10 +761,10 @@ window.__imported__["DropPay Mockups - Android@3x/layers.json.js"] = [
 				"image": {
 					"path": "images/Layer-vendita3_check-otk5mtff.png",
 					"frame": {
-						"x": 38,
-						"y": 178,
-						"width": 285,
-						"height": 287
+						"x": 51,
+						"y": 215,
+						"width": 264,
+						"height": 202
 					}
 				},
 				"children": []
