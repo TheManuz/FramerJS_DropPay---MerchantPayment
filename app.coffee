@@ -102,7 +102,45 @@ sketch.vendita2_back.onClick ->
 #Schermata 3 setup
 circlePulse = null
 
-for layer in [sketch.vendita3_QRcode, sketch.vendita3_check, sketch.vendita3_label_id, sketch.vendita3_label_info, sketch.vendita3_label_success]
+infoLabel = sketch.vendita3_label_info.convertToTextLayer()
+infoLabel.fontFamily = "Roboto"
+infoLabel.lineHeight *= 0.5
+infoLabel.fontSize *= 3
+infoLabel.fontWeight = 500 #Medium weight 
+infoLabel.autoSize = true
+
+circularMaskDiameter = 736*3
+greenScreen = new Layer
+	originX: 0.5
+	originY: 0.5 
+	width: circularMaskDiameter
+	height: circularMaskDiameter
+	backgroundColor: "rgb(126,211,33)"
+	parent: sketch.vendita3
+	borderRadius: "50%"
+	clip: true
+greenScreen.placeBehind(sketch.vendita3_appbar)
+greenScreen.states.add
+	hidden:
+		x: Framer.Device.screen.width*0.5
+		y: Framer.Device.screen.height*0.5
+		width: 0
+		height: 0
+	grown:
+		x: (Framer.Device.screen.width-circularMaskDiameter)*0.5
+		y: (Framer.Device.screen.height-circularMaskDiameter)*0.5
+		width: circularMaskDiameter
+		height: circularMaskDiameter
+
+sketch.vendita3_check.setParent(greenScreen)
+sketch.vendita3_check.center()
+
+sketch.vendita3_check.states.add
+	hidden:
+		x: -360
+		y: -360
+		
+for layer in [sketch.vendita3_QRcode, infoLabel]
 	do (layer) ->
 		layer.states.add
 			hidden:
@@ -110,20 +148,19 @@ for layer in [sketch.vendita3_QRcode, sketch.vendita3_check, sketch.vendita3_lab
 				opacity: 0
 			
 Views.onViewWillSwitch (oldView, newView) ->
-	if newView is sketch.vendita3
+	if newView is sketch.vendita3	
+		greenScreen.states.switchInstant("hidden")
 		sketch.vendita3_check.states.switchInstant("hidden")
 		sketch.vendita3_QRcode.states.switchInstant("hidden")
-		sketch.vendita3_label_success.states.switchInstant("hidden")
-		sketch.vendita3_label_id.states.switchInstant("default")
-		sketch.vendita3_label_info.states.switchInstant("default")
+		infoLabel.states.switchInstant("default")
 		sketch.vendita3_QRcode.states.switch("default", curve: "bezier-curve", curveOptions: [0.0, 0.0, 0.2, 1], time: 0.375)
 		Utils.delay 4, ->
+			sketch.vendita3_QRcode.states.switch("hidden", curve: "bezier-curve", curveOptions: [0.0, 0.0, 0.2, 1], time: 0.375)								
 			sketch.vendita3_check.states.switch("default", curve: "bezier-curve", curveOptions: [0.0, 0.0, 0.2, 1], time: 0.375)
-			sketch.vendita3_label_success.states.switch("default", curve: "bezier-curve", curveOptions: [0.0, 0.0, 0.2, 1], time: 0.375)
-			sketch.vendita3_QRcode.states.switch("hidden", curve: "bezier-curve", curveOptions: [0.0, 0.0, 0.2, 1], time: 0.375)
-			sketch.vendita3_label_id.states.switch("hidden", curve: "bezier-curve", curveOptions: [0.0, 0.0, 0.2, 1], time: 0.375)
-			sketch.vendita3_label_info.states.switch("hidden", curve: "bezier-curve", curveOptions: [0.0, 0.0, 0.2, 1], time: 0.375)
-
+			greenScreen.states.switch("grown", curve: "bezier-curve", curveOptions: [0.0, 0.0, 0.2, 1], time: 0.375)
+			infoLabel.text = "Pagamento effettuato"
+			infoLabel.centerX()
+			
 Views.onViewDidSwitch (oldView, newView) ->
 	if newView is sketch.vendita3
 		circlePulse = new Layer
