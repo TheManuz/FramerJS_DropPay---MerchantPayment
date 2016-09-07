@@ -16,6 +16,32 @@ window.__imported__["DropPay Mockups - Android@3x/layers.json.js"] = [
 		"backgroundColor": "rgba(255, 255, 255, 1)",
 		"children": [
 			{
+				"objectId": "55062D40-C879-4BE7-B74E-9EBE9016420D",
+				"kind": "group",
+				"name": "vendita1_appbar",
+				"maskFrame": null,
+				"layerFrame": {
+					"x": -4,
+					"y": -4,
+					"width": 368,
+					"height": 92
+				},
+				"visible": true,
+				"metadata": {
+					"opacity": 1
+				},
+				"image": {
+					"path": "images/Layer-vendita1_appbar-ntuwnjje.png",
+					"frame": {
+						"x": -4,
+						"y": -4,
+						"width": 368,
+						"height": 92
+					}
+				},
+				"children": []
+			},
+			{
 				"objectId": "C661EA15-0872-42F9-A96F-F0DB8566DACC",
 				"kind": "group",
 				"name": "vendita1_button",
@@ -492,32 +518,6 @@ window.__imported__["DropPay Mockups - Android@3x/layers.json.js"] = [
 					}
 				},
 				"children": []
-			},
-			{
-				"objectId": "55062D40-C879-4BE7-B74E-9EBE9016420D",
-				"kind": "group",
-				"name": "vendita1_appbar",
-				"maskFrame": null,
-				"layerFrame": {
-					"x": -4,
-					"y": -4,
-					"width": 368,
-					"height": 92
-				},
-				"visible": true,
-				"metadata": {
-					"opacity": 1
-				},
-				"image": {
-					"path": "images/Layer-vendita1_appbar-ntuwnjje.png",
-					"frame": {
-						"x": -4,
-						"y": -4,
-						"width": 368,
-						"height": 92
-					}
-				},
-				"children": []
 			}
 		]
 	},
@@ -536,6 +536,58 @@ window.__imported__["DropPay Mockups - Android@3x/layers.json.js"] = [
 		"metadata": {},
 		"backgroundColor": "rgba(255, 255, 255, 1)",
 		"children": [
+			{
+				"objectId": "A6F9E21D-119B-4444-9433-333AE253B17B",
+				"kind": "group",
+				"name": "vendita2_back",
+				"maskFrame": null,
+				"layerFrame": {
+					"x": 20,
+					"y": 44,
+					"width": 16,
+					"height": 16
+				},
+				"visible": true,
+				"metadata": {
+					"opacity": 1
+				},
+				"image": {
+					"path": "images/Layer-vendita2_back-qtzgouuy.png",
+					"frame": {
+						"x": 20,
+						"y": 44,
+						"width": 16,
+						"height": 16
+					}
+				},
+				"children": []
+			},
+			{
+				"objectId": "970AD706-D6B6-4770-8490-C87AF7D38A3C",
+				"kind": "group",
+				"name": "vendita2_appbar",
+				"maskFrame": null,
+				"layerFrame": {
+					"x": -4,
+					"y": -4,
+					"width": 368,
+					"height": 92
+				},
+				"visible": true,
+				"metadata": {
+					"opacity": 1
+				},
+				"image": {
+					"path": "images/Layer-vendita2_appbar-otcwquq3.png",
+					"frame": {
+						"x": -4,
+						"y": -4,
+						"width": 368,
+						"height": 92
+					}
+				},
+				"children": []
+			},
 			{
 				"objectId": "C15C3308-4913-4DE3-90B9-45575A8429AB",
 				"kind": "group",
@@ -640,58 +692,6 @@ window.__imported__["DropPay Mockups - Android@3x/layers.json.js"] = [
 					}
 				},
 				"children": []
-			},
-			{
-				"objectId": "A6F9E21D-119B-4444-9433-333AE253B17B",
-				"kind": "group",
-				"name": "vendita2_back",
-				"maskFrame": null,
-				"layerFrame": {
-					"x": 20,
-					"y": 44,
-					"width": 16,
-					"height": 16
-				},
-				"visible": true,
-				"metadata": {
-					"opacity": 1
-				},
-				"image": {
-					"path": "images/Layer-vendita2_back-qtzgouuy.png",
-					"frame": {
-						"x": 20,
-						"y": 44,
-						"width": 16,
-						"height": 16
-					}
-				},
-				"children": []
-			},
-			{
-				"objectId": "970AD706-D6B6-4770-8490-C87AF7D38A3C",
-				"kind": "group",
-				"name": "vendita2_appbar",
-				"maskFrame": null,
-				"layerFrame": {
-					"x": -4,
-					"y": -4,
-					"width": 368,
-					"height": 92
-				},
-				"visible": true,
-				"metadata": {
-					"opacity": 1
-				},
-				"image": {
-					"path": "images/Layer-vendita2_appbar-otcwquq3.png",
-					"frame": {
-						"x": -4,
-						"y": -4,
-						"width": 368,
-						"height": 92
-					}
-				},
-				"children": []
 			}
 		]
 	},
@@ -710,6 +710,58 @@ window.__imported__["DropPay Mockups - Android@3x/layers.json.js"] = [
 		"metadata": {},
 		"backgroundColor": "rgba(23.969999999999995, 167.79, 239.70000000000002, 1)",
 		"children": [
+			{
+				"objectId": "315B31C9-55F2-4F6E-A639-DB7BBA71315F",
+				"kind": "group",
+				"name": "vendita3_close",
+				"maskFrame": null,
+				"layerFrame": {
+					"x": 21,
+					"y": 45,
+					"width": 14,
+					"height": 14
+				},
+				"visible": true,
+				"metadata": {
+					"opacity": 1
+				},
+				"image": {
+					"path": "images/Layer-vendita3_close-mze1qjmx.png",
+					"frame": {
+						"x": 21,
+						"y": 45,
+						"width": 14,
+						"height": 14
+					}
+				},
+				"children": []
+			},
+			{
+				"objectId": "9280A48C-AF03-49F3-8E9E-7CBF125775CD",
+				"kind": "group",
+				"name": "vendita3_appbar",
+				"maskFrame": null,
+				"layerFrame": {
+					"x": 0,
+					"y": 0,
+					"width": 360,
+					"height": 60
+				},
+				"visible": true,
+				"metadata": {
+					"opacity": 1
+				},
+				"image": {
+					"path": "images/Layer-vendita3_appbar-oti4mee0.png",
+					"frame": {
+						"x": 0,
+						"y": 0,
+						"width": 360,
+						"height": 60
+					}
+				},
+				"children": []
+			},
 			{
 				"objectId": "2E65156A-14DB-4401-8989-117334987AB0",
 				"kind": "text",
@@ -796,58 +848,6 @@ window.__imported__["DropPay Mockups - Android@3x/layers.json.js"] = [
 						"y": 145,
 						"width": 334,
 						"height": 336
-					}
-				},
-				"children": []
-			},
-			{
-				"objectId": "315B31C9-55F2-4F6E-A639-DB7BBA71315F",
-				"kind": "group",
-				"name": "vendita3_close",
-				"maskFrame": null,
-				"layerFrame": {
-					"x": 21,
-					"y": 45,
-					"width": 14,
-					"height": 14
-				},
-				"visible": true,
-				"metadata": {
-					"opacity": 1
-				},
-				"image": {
-					"path": "images/Layer-vendita3_close-mze1qjmx.png",
-					"frame": {
-						"x": 21,
-						"y": 45,
-						"width": 14,
-						"height": 14
-					}
-				},
-				"children": []
-			},
-			{
-				"objectId": "9280A48C-AF03-49F3-8E9E-7CBF125775CD",
-				"kind": "group",
-				"name": "vendita3_appbar",
-				"maskFrame": null,
-				"layerFrame": {
-					"x": 0,
-					"y": 0,
-					"width": 360,
-					"height": 60
-				},
-				"visible": true,
-				"metadata": {
-					"opacity": 1
-				},
-				"image": {
-					"path": "images/Layer-vendita3_appbar-oti4mee0.png",
-					"frame": {
-						"x": 0,
-						"y": 0,
-						"width": 360,
-						"height": 60
 					}
 				},
 				"children": []

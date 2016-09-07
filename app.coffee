@@ -119,7 +119,7 @@ greenScreen = new Layer
 	parent: sketch.vendita3
 	borderRadius: "50%"
 	clip: true
-greenScreen.placeBehind(sketch.vendita3_appbar)
+greenScreen.placeBefore(sketch.vendita3_QRcode)
 greenScreen.states.add
 	hidden:
 		x: Framer.Device.screen.width*0.5
@@ -137,8 +137,9 @@ sketch.vendita3_check.center()
 
 sketch.vendita3_check.states.add
 	hidden:
-		x: -360
-		y: -360
+		scale: 0
+		x: -sketch.vendita3_check.width/2
+		y: -sketch.vendita3_check.height/2
 		
 for layer in [sketch.vendita3_QRcode, infoLabel]
 	do (layer) ->
@@ -155,9 +156,9 @@ Views.onViewWillSwitch (oldView, newView) ->
 		infoLabel.states.switchInstant("default")
 		sketch.vendita3_QRcode.states.switch("default", curve: "bezier-curve", curveOptions: [0.0, 0.0, 0.2, 1], time: 0.375)
 		Utils.delay 4, ->
-			sketch.vendita3_QRcode.states.switch("hidden", curve: "bezier-curve", curveOptions: [0.0, 0.0, 0.2, 1], time: 0.375)								
-			sketch.vendita3_check.states.switch("default", curve: "bezier-curve", curveOptions: [0.0, 0.0, 0.2, 1], time: 0.375)
-			greenScreen.states.switch("grown", curve: "bezier-curve", curveOptions: [0.0, 0.0, 0.2, 1], time: 0.375)
+			#sketch.vendita3_QRcode.states.switch("hidden", curve: "bezier-curve", curveOptions: [0.0, 0.0, 0.2, 1], time: 0.375)								
+			sketch.vendita3_check.states.switch("default", curve: "bezier-curve", curveOptions: [0.0, 0.0, 0.2, 1], time: 0.425)
+			greenScreen.states.switch("grown", curve: "bezier-curve", curveOptions: [0.0, 0.0, 0.2, 1], time: 0.425)
 			infoLabel.text = "Pagamento effettuato"
 			infoLabel.centerX()
 			
