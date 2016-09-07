@@ -4,20 +4,20 @@
   },
   "deviceOrientation" : 0,
   "sharedPrototype" : 0,
-  "contentScale" : 1,
-  "deviceType" : "google-nexus-5x",
+  "contentScale" : 1.5,
+  "deviceType" : "fullscreen",
   "selectedHand" : "",
   "updateDelay" : 0.3,
-  "deviceScale" : "fit",
+  "deviceScale" : 1,
   "foldedCodeRanges" : [
     "{0, 230}",
-    "{231, 344}",
-    "{576, 823}",
-    "{1400, 666}",
-    "{2067, 191}",
-    "{2259, 181}",
-    "{2441, 2613}"
+    "{231, 588}",
+    "{820, 162}",
+    "{983, 984}",
+    "{1968, 617}",
+    "{2586, 163}",
+    "{2750, 764}",
+    "{3515, 2610}"
   ],
-  "orientation" : 0,
-  "fullScreen" : false
+  "orientation" : 0
 }
